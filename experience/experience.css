@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700");
+/* Imported font styles */
+@font-face {
+    font-family: FarenheightFont;
+    src: url(../projects/FarenheightPersonalUseRegular-9YdJ7.ttf);
+}
+.heading{
+    margin-top: 2%;
+    /* text-decoration: underline; */
+    /* padding-bottom: -100%; */
+    border-bottom: rgb(177, 175, 175) solid 0.1vw;
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align:right;
+    font-family: FarenheightFont ;
+    /* font-weight: 500; */
+    /* font-weight: 100; */
+    font-size: 300%;
+    /* font-stretch: expanded; */
+    /* text-decoration: solid; */
+
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0 4em;
+}
+
+main {
+  min-width: 300px;
+  max-width: 500px;
+  margin: auto;
+}
+
+main p {
+  font-size: 1em;
+  line-height: 1.75em;
+  border-top: 3px solid;
+  border-image: black;
+  border-image-slice: 1;
+  border-width: 3px;
+  margin: 0;
+  padding: 40px;
+  counter-increment: section;
+  position: relative;
+  color: black;
+}
+
+main p:before {
+  content: counter(section);
+  position: absolute;
+  border-radius: 50%;
+  padding: 10px;
+  height: 1.25em;
+  width: 1.25em;
+  background-color: black;
+  text-align: center;
+  line-height: 1.25em;
+  color: #ffffff;
+  font-size: 1em;
+}
+
+/* Odd number borders */
+main p:nth-child(odd) {
+  border-right: 3px solid;
+  padding-left: 0;
+}
+
+main p:nth-child(odd):before {
+  left: 100%;
+  margin-left: -20px;
+}
+
+/* Even number borders */
+main p:nth-child(even) {
+  border-left: 3px solid;
+  padding-right: 0;
+}
+
+main p:nth-child(even):before {
+  right: 100%;
+  margin-right: -20px;
+}
+
+/* Handle first and last paragraphs */
+main p:first-child {
+  border-top: 0;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+}
+
+main p:last-child {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+@media (max-width:1600px){
+  .heading{
+      margin-top: 40%;
+      font-size: 150%;
+      margin-left: 5%;
+      margin-right: 5%;
+  }
+  .logo{
+    left: 0;
+  }
+  .flex-container{
+      margin: 0 5%;
+      flex-direction: column;
+  }
+  .experiments{
+      border: rgb(177, 175, 175) solid 0.1vw;       
+  }
+  .index{
+      font-size: 100%;
+      /* border: rgb(177, 175, 175) solid 0.1vw;        */
+
+  }
+  .header{
+      font-size: 80%;
+  }
+  .tech-used p{
+      margin: 1vw;
+  }
+}

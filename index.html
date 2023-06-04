@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="mobile-index.css">
+   
+    <script>
+        var counter = 0;
+    
+        function changeText() {
+            var quotes = new Array();
+    
+            quotes[0] = "";
+            quotes[1] = "Frontend Developer";
+    
+            quotes[2] = "";
+            quotes[3] = "Content Writer";
+            quotes[4] = "";
+            quotes[5] = "Grammar Nazi";
+            quotes[6] = "";
+            quotes[7] = "Polygot";
+            quotes[8] = "";
+            quotes[9] = "<span style='color: #000000;'>Batman</span>"; // Batman quote
+            quotes[10] = "";
+    
+            var textSlide = document.getElementById("textslide");
+            textSlide.style.opacity = 0;
+    
+            if (counter > 9) {
+                counter = 0;
+            }
+    
+            setTimeout(function () {
+                textSlide.innerHTML = quotes[counter];
+                textSlide.style.opacity = 1;
+            }, 500);
+    
+            setTimeout(function () {
+                textSlide.style.opacity = 0;
+            }, 20000);
+    
+            setTimeout(function () {
+                changeText();
+            }, 2000);
+    
+            counter++;
+        }
+    </script>
+    
+    <style>
+        @media (max-width:768px) {
+            body{
+                /* display: none; */
+            }
+            p{
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body onload="changeText();">
+    <a href="index.html"><img src="../logo.png" alt="" class="logo" style="position: fixed;">
+    </a>
+    <div class="navigation">
+        <input type="checkbox" class="navigation__checkbox" id="nav-toggle">
+        <label for="nav-toggle" class="navigation__button">
+            <span class="navigation__icon" aria-label="toggle navigation menu"></span>
+        </label>
+        <div class="navigation__background"></div>
+
+        <nav class="navigation__nav" role="navigation">
+            
+            <div class="box projects hidden" id="box">
+                <a href="projects/projects.html">Projects.</a>
+            </div>
+            <div class="box about hidden" id="box">
+                <a href="about/about.html">About.</a>
+            </div>
+            <div class="box home hidden" id="box">
+                <a href="index.html"> <img src="../3dgifmaker75010.gif" alt=""></a>
+            </div>
+            <div class="box career hidden" id="box">
+                <a href="experience/experience.html">Experience.</a>
+            </div>
+            <div class="box blog hidden" id="box">
+                <a href="blog/blog.html">Blog.</a>
+            </div>
+            <div class="box contact hidden">
+                <p>Contact.</p>
+                <div class="flex">
+                    <a href="www.github.com/mIronsideS">
+                        <img src="https://img.icons8.com/external-tanah-basah-glyph-tanah-basah/48/FFFFFF/external-github-social-media-tanah-basah-glyph-tanah-basah.png" alt="GitHub" >
+                        <span>GitHub</span>
+                    </a>
+                    <a href="mohammedsahal0085@gmail.com">
+                        <img src="https://img.icons8.com/ios-filled/50/FFFFFF/gmail-new.png" alt="Email">
+                        <span>Email Address</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/mohammed-sahal-4b299924a/">
+                        <img src="https://img.icons8.com/ios-filled/50/FFFFFF/linkedin.png" alt="LinkedIn">
+                        <span>LinkedIn</span>
+                    </a>
+                </div>
+                <div class="flex-mobile">
+                    <ul style="list-style: none;">
+                        <li><a href="www.github.com/mIronsideS">
+                            <img src="https://img.icons8.com/external-tanah-basah-glyph-tanah-basah/48/FFFFFF/external-github-social-media-tanah-basah-glyph-tanah-basah.png" alt="GitHub" >
+                            <span>GitHub</span>
+                        </a></li>
+                        <li><a href="mohammedsahal0085@gmail.com">
+                            <img src="https://img.icons8.com/ios-filled/50/FFFFFF/gmail-new.png" alt="Email">
+                            <span>Email Address</span>
+                        </a></li>
+                        <li> <a href="https://www.linkedin.com/in/mohammed-sahal-4b299924a/">
+                            <img src="https://img.icons8.com/ios-filled/50/FFFFFF/linkedin.png" alt="LinkedIn">
+                            <span>LinkedIn</span>
+                        </a></li>
+                    </ul>
+                </div>
+                
+            </div>
+        </nav>
+
+    </div>
+    <p class="name">Mohammed Sahal </p>
+    <p id="textslide"></p>
+
+</body>
+
+</html>

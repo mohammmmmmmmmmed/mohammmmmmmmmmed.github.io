@@ -1,0 +1,50 @@
+@font-face {
+    font-family: 'wotfardregular';
+    src: url('wotfard-regular-webfont.woff2') format('woff2'),
+         url('wotfard-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+  #textslide {
+    /* position: absolute; */
+    text-align: center;
+    font-weight: 500;
+    /* transform: translate(-50%, -50%); */
+    font-family: 'wotfardregular', sans-serif;
+    /* font-weight: bold; */
+    /* font-size: 8vh; */
+    opacity: 0;
+    transition: opacity 0.1s ease-in-out;
+
+}
+  
+  .name {
+    font-size: 525%;
+    margin-top: 12%;
+    text-align: center;
+    /* line-height: 517%; */
+    font-weight: 900;
+    font-family: 'wotfardregular';
+    text-transform: uppercase;
+    margin-bottom: 1%;
+  }
+  
+  #textslide {
+    font-family: 'wotfardregular';
+    font-size: 450%;
+  }
+  
+  body {
+    /* background-repeat: no-repeat; */
+    /* min-height: 100vh; */
+    /* min-height: 100vh; */
+    /* overflow: hidden; */
+    background-image: linear-gradient(to right,#b9e6c3, #6cdd8c,  #6cdd8c, #b9e6c3);
+    color: white;
+  }
+  
+  @media (max-width:1600px){
+    .name{
+      margin-top: 35vh;
+    }
+  }

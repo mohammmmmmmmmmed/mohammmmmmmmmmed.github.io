@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="blog.css">
+    <link rel="stylesheet" href="../common.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <a href="../index.html"><img src="../logo.png" alt="" class="logo">
+    </a>
+        <div class="navigation">
+        <input type="checkbox" class="navigation__checkbox" id="nav-toggle">
+        <label for="nav-toggle" class="navigation__button">
+            <span class="navigation__icon" aria-label="toggle navigation menu"></span>
+        </label>
+        <div class="navigation__background"></div>
+
+        <nav class="navigation__nav" role="navigation">
+
+            <div class="box projects hidden" id="box">
+                <a href="../projects/projects.html">Projects.</a>
+            </div>
+            <div class="box about hidden" id="box">
+                <a href="../about/about.html">About.</a>
+            </div>
+            <div class="box home hidden" id="box">
+                <a href="../index.html"> <img src="../3dgifmaker75010.gif" alt=""></a>
+            </div>
+            <div class="box career hidden" id="box">
+                <a href="../experience/experience.html">Experience.</a>
+            </div>
+            <div class="box blog hidden" id="box">
+                <a href="../blog/blog.html">Blog.</a>
+            </div>
+            <div class="box contact hidden">
+                <p>Contact.</p>
+                <div class="flex">
+                    <a href="www.github.com/mIronsideS">
+                        <img src="https://img.icons8.com/external-tanah-basah-glyph-tanah-basah/48/FFFFFF/external-github-social-media-tanah-basah-glyph-tanah-basah.png"
+                            alt="GitHub">
+                        <span>GitHub</span>
+                    </a>
+                    <a href="mohammedsahal0085@gmail.com">
+                        <img src="https://img.icons8.com/ios-filled/50/FFFFFF/gmail-new.png" alt="Email">
+                        <span>Email Address</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/mohammed-sahal-4b299924a/">
+                        <img src="https://img.icons8.com/ios-filled/50/FFFFFF/linkedin.png" alt="LinkedIn">
+                        <span>LinkedIn</span>
+                    </a>
+                </div>
+                <div class="flex-mobile">
+                    <ul style="list-style: none;">
+                        <li><a href="www.github.com/mIronsideS">
+                            <img src="https://img.icons8.com/external-tanah-basah-glyph-tanah-basah/48/FFFFFF/external-github-social-media-tanah-basah-glyph-tanah-basah.png" alt="GitHub" >
+                            <span>GitHub</span>
+                        </a></li>
+                        <li><a href="mohammedsahal0085@gmail.com">
+                            <img src="https://img.icons8.com/ios-filled/50/FFFFFF/gmail-new.png" alt="Email">
+                            <span>Email Address</span>
+                        </a></li>
+                        <li> <a href="https://www.linkedin.com/in/mohammed-sahal-4b299924a/">
+                            <img src="https://img.icons8.com/ios-filled/50/FFFFFF/linkedin.png" alt="LinkedIn">
+                            <span>LinkedIn</span>
+                        </a></li>
+                    </ul>
+                </div>
+                
+
+
+            </div>
+        </nav>
+
+    </div>
+    <div class="heading" style="color: black;">
+        <p>Journal</p>
+    </div>
+    <div class="flex-container">
+        <div class="index">Index.
+            <p>
+                A list of topics that I have written on, that you can filter by:
+            </p>
+            <div style="display:flex;">
+                <ol style="list-style: none; ">
+                    <li>/01</li>
+                    <li>/02</li>
+                    <li>/03</li>
+                    <li>/04</li>
+                    <li>/05</li>
+                    <li>06</li>
+                </ol>
+                <ol style="list-style: none; ">
+                    <li><a href="domestic-abuse.html">Domestic Abuse</a></li>
+                    <li><a href="public-figures.html">Public Figures</a></li>
+                    <li><a href="news-roundups.html">News Roundups</a></li>
+                    <li><a href="csa.html">Child Sexual Abuse</a></li>
+                    <li><a href="sa-cases.html">SA Cases</a></li>
+                    <li><a href="tech.html">Tech Articles</a></li>
+                </ol>
+            </div>
+
+        </div>
+        <div class="experiments">
+            <div class="project one">
+                <div class="header">
+                    <div class="year">
+                        <p>/2023</p>
+                    </div>
+                    <div class="project-name">
+                        Dalai Lama's controversy
+                    </div>
+                    <div class="tech-used" style="display: flex;">
+
+                        <p>Child Sexual Abuse</p>
+                        <p>Public Figures</p>
+
+
+                    </div>
+                </div>
+
+                <div class="image-link">
+                    <a href="https://www.instagram.com/p/CrTQpmQLuDX/">
+                        <img src="https://snapxcdn.com/v2/?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJodHRwczovL3Njb250ZW50LmNkbmluc3RhZ3JhbS5jb20vdi90NTEuMjg4NS0xNS8zNDIwNzUzNTRfNzY3NTQ2ODUxNjk5NzEzXzI5OTkzMjMwNjQ4MTEwMzY0ODZfbi53ZWJwP3N0cD1kc3QtanBnX2UzNSZfbmNfaHQ9c2NvbnRlbnQuY2RuaW5zdGFncmFtLmNvbSZfbmNfY2F0PTEwOSZfbmNfb2hjPVo1VW1QODR6T2pnQVhfNkdQZE0mZWRtPUFQczE3Q1VCQUFBQSZjY2I9Ny01Jm9oPTAwX0FmRGJneEVZOUNjcmNVd2lFT0pnYUdTdVhpUnhyWUo0OUczS0w4RVVxdkYwR0Emb2U9NjQ3ODJBNEImX25jX3NpZD1kZjA0NGYiLCJmaWxlbmFtZSI6IlNuYXBpbnN0YS5hcHBfMzQyMDc1MzU0Xzc2NzU0Njg1MTY5OTcxM18yOTk5MzIzMDY0ODExMDM2NDg2X25fMTA4MC5qcGcifQ.du5ZFf4jDBqyq8Ky4AAnLcJZ__3vl5-5G6b-eZf0lTY&dl=1"
+                            alt="" class="img" style="">
+
+                    </a>
+                </div>
+                <div class="descriptor">
+                    <h2>A greeting lost in translation, or, exploitation of authority?</h2>
+                    <p>The 14th Dalai Lama, Tenzin Gyatso, is a highly respected spiritual leader and Nobel Peace Prize
+                        laureate, yet his public image has been marred by controversy throughout his life. The most
+                        recent scandal, which emerged in February 2023, involved a video of the Dalai Lama kissing a
+                        young boy on the lips and asking him to "suck my tongue," which caused widespread outrage. While
+                        this incident is deeply concerning on its own, it is just one example of a pattern of
+                        problematic behavior throughout the Dalai Lama's tenure.
+                    </p>
+                    <h3>The Video</h3>
+                    <p>The emergence of a video in February 2023, showing the Dalai Lama kissing a young boy on the lips
+                        and asking him to "suck my tongue," has ignited a firestorm of controversy on social media. Many
+                        people have condemned his behavior as "abusive," "disgusting," and "scandalous." In response,
+                        the Dalai Lama's office issued an apology, claiming that his actions were intended to be
+                        "innocent and playful."
+                    </p>
+                    <p>
+                        The video has polarized opinions, with some defending the Dalai Lama and others calling for
+                        accountability for his actions. While some have argued that his behavior reflects cultural norms
+                        or is simply the result of his playful personality, others have criticized his actions as
+                        inappropriate and potentially harmful. Notably, the head of Tibet's government-in-exile has
+                        defended the Dalai Lama, suggesting that the incident highlights his grandfatherly and
+                        lighthearted nature.
+
+                    </p>
+                    <h3> Controversial Remarks on African Refugees</h3>
+                    <p>In 2015, the Dalai Lama stirred controversy when he expressed the opinion that Europe should only
+                        accept "a limited number" of African refugees and that they should eventually return to their
+                        home countries. This comment was met with widespread criticism, with many accusing him of
+                        advocating for discriminatory policies.
+                    </p>
+                    <p>
+                        Despite paraphrasing what he meant, the incident highlighted the challenges of addressing
+                        complex issues such as immigration and refugee rights in a politically sensitive and rapidly
+                        changing global environment.
+                    </p>
+                    <h3> Controversial Remarks on Female Succession</h3>
+                    <p>In 2011, the Dalai Lama made remarks that drew criticism when he suggested that any female
+                        successor to his role as spiritual leader would need to be "very, very attractive" in order to
+                        be effective. Many saw this as evidence of gender bias and objectification of women.
+                    </p>
+                    <p>
+                        The Dalai Lama later issued an apology, stating that his comments were intended as a joke and
+                        that he regretted any offense he may have caused. Nonetheless, the incident highlights the
+                        challenges of promoting gender equality and addressing stereotypes in traditional religious
+                        institutions.
+                    </p>
+                </div>
+            </div>
+            <div class="project one">
+                <div class="header">
+                    <div class="year">
+                        <p>/2023</p>
+                    </div>
+                    <div class="project-name">
+                        Child Sexual Abuse
+                    </div>
+                    <div class="tech-used" style="display: flex;">
+
+                        <p>Child Sexual Abuse</p>
+                        <p>Public Figures</p>
+
+
+                    </div>
+                </div>
+
+                <div class="image-link">
+                    <a href="https://www.instagram.com/p/CrL3mvJvVLo/">
+                        <img src="https://snapxcdn.com/v2/?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJodHRwczovL3Njb250ZW50LmNkbmluc3RhZ3JhbS5jb20vdi90NTEuMjg4NS0xNS8zNDIwNzM1NzdfMTQ0OTcxNDk1MjA0NzA0XzM4MTY3OTk2NzY3NTI4NTc5NzJfbi53ZWJwP3N0cD1kc3QtanBnX2UzNSZfbmNfaHQ9c2NvbnRlbnQuY2RuaW5zdGFncmFtLmNvbSZfbmNfY2F0PTEwNCZfbmNfb2hjPW0zT3Fienlfdm1rQVhfazVMUzMmZWRtPUFQczE3Q1VCQUFBQSZjY2I9Ny01Jm9oPTAwX0FmQW5NVGtuenpmUVd1Y01CeVAxWTJva3FVLXhZMnBkTlA1ekFuVHA2RUV6V2cmb2U9NjQ3NzZENDImX25jX3NpZD1kZjA0NGYiLCJmaWxlbmFtZSI6IlNuYXBpbnN0YS5hcHBfMzQyMDczNTc3XzE0NDk3MTQ5NTIwNDcwNF8zODE2Nzk5Njc2NzUyODU3OTcyX25fMTA4MC5qcGcifQ.0E5vloqG0tJMByWZrKdzy57GZMYzx0aO_wMH0f5fJ5s&dl=1"
+                            alt="" class="img" style="">
+
+                    </a>
+                </div>
+                <div class="descriptor">
+                    
+                    <h3>Introduction</h3>
+                    <p>Child sexual abuse (CSA) is a serious issue in India that often goes unreported and unaddressed.
+                        It can have long-lasting effects on the physical, emotional, and mental health of the child. It
+                        is important to create awareness about this issue.
+                    </p>
+                    <h3>
+                        Statistics</h3>
+                    <p>
+                        32,608 cases of child rape were reported in India in 2017, an 82% increase from 2016. However,
+                        many cases of CSA go unreported, and these statistics may not accurately represent the scope of
+                        the problem.
+                    </p>
+                    <h3>
+                        Asifa Bano Case</h3>
+                    <p>
+                        In 2018, an 8-year-old girl named Asifa Bano was raped and killed in Kathua, Jammu & Kashmir,
+                        igniting outrage across the country and calls for justice. The incident highlighted the
+                        requirement for more stringent regulations and improved child protection in India. A contentious
+                        book that examines the issue is "The Girl from Kathua: A Sacrificial Victim of Ghazwa-e-Hind" by
+                        Indian professor Madhu Kishwar. According to the book, Asifa Bano's rape and murder were part of
+                        a bigger scheme to frighten the Hindu community and spread the notion of Ghazwa-e-Hind, a word
+                        used by some extremist organisations in India to refer to a future Islamic conquest of India.
+                        The book has drawn criticism for encouraging a communal and divisive narrative.
+                    </p>
+                    <h3>
+                        Dalai Lama Case</h3>
+                    <p>
+                        In February 2023, a video of the Dalai Lama kissing a young boy on the lips and asking him to
+                        suck his tongue surfaced, raising concerns about possible child abuse. While Tibetan activists
+                        have argued that it was an innocent joke, many have condemned the conduct as inappropriate and
+                        unacceptable. </p>
+                </div>
+            </div>
+            <div class="project one">
+                <div class="header">
+                    <div class="year">
+                        <p>/2023</p>
+                    </div>
+                    <div class="project-name">
+                        Bilkis Bano
+                    </div>
+                    <div class="tech-used" style="display: flex;">
+
+                        <p>SA Cases</p>
+
+
+                    </div>
+                </div>
+
+                <div class="image-link">
+                    <a href="https://www.instagram.com/p/CrBjYsPrwMr/">
+                        <img src="https://snapxcdn.com/v2/?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJodHRwczovL3Njb250ZW50LmNkbmluc3RhZ3JhbS5jb20vdi90NTEuMjg4NS0xNS8zNDA5NDk1OTNfMTM3NzE2NDM4NjQxMDc1NV8zMTA0NzUxNjEwNTAyMjY4MzYxX24ud2VicD9zdHA9ZHN0LWpwZ19lMzUmX25jX2h0PXNjb250ZW50LmNkbmluc3RhZ3JhbS5jb20mX25jX2NhdD0xMTEmX25jX29oYz1OckxZS1c0VlBld0FYX0g2QTduJmVkbT1BUHMxN0NVQkFBQUEmY2NiPTctNSZvaD0wMF9BZkJYY0RNVG9aekc0Z2JEa3N2NzA0S1RuXzMtU1JENU1LbTVCS3lub3R2WkR3Jm9lPTY0NzdCMjJFJl9uY19zaWQ9ZGYwNDRmIiwiZmlsZW5hbWUiOiJTbmFwaW5zdGEuYXBwXzM0MDk0OTU5M18xMzc3MTY0Mzg2NDEwNzU1XzMxMDQ3NTE2MTA1MDIyNjgzNjFfbl8xMDgwLmpwZyJ9.5a_hLeU_L5b39EaVVxd2Vr2QDS7hqT1xhq7L_an76KU&dl=1"
+                            alt="" class="img" style="">
+
+                    </a>
+                </div>
+                <div class="descriptor">
+                    <h2>Bilkis Bano: How India Failed sexual abuse survivors</h2>
+
+                    <h3>Who:</h3>
+                    <p>Bilkis Bano, a young Muslim woman, was just 19 years old when she was gang-raped by a group of
+                        men
+                        during the 2002 Gujarat riots in India. The attack left her traumatized and deeply affected her
+                        life. However, despite the overwhelming evidence, it took Bilkis 17 years to see justice served.
+                        In
+                        2019, the Supreme Court of India finally convicted the accused and upheld Bilkis' plea for
+                        compensation. The landmark ruling not only brought closure to Bilkis, but it also set a
+                        precedent
+                        for holding perpetrators of communal violence accountable.
+                    </p>
+                    <h3>That is, untill:</h3>
+                    <p>
+                        The Indian government led by Prime Minister Narendra Modi approved the early release of the 11
+                        men
+                        who took part in Bilkis' ordeal were convicted and sentenced to life in prison. The approval
+                        letter
+                        was uploaded on social media by legal site The Leaflet, and was signed by Modi's close aide Amit
+                        Shah, who heads the Ministry of Home Affairs. The men were released in August 2022 and their
+                        subsequent felicitation by right-wing activists caused outrage. Bilkis Bano expressed her shock
+                        and
+                        disbelief at the decision. According to court documents and news reports, the convicted men were
+                        granted stretches of parole and furloughs for more than 1,000 days before they were prematurely
+                        released. They were allowed to sit in the inaugural function of a religious event with BJP MLA
+                        and
+                        MP, where they were garlanded and called "sanskaari Brahmins". The decision has been criticized
+                        by
+                        opposition leaders and activists, who accused the government of undermining women's rights and
+                        harbouring a bias towards Muslims.
+                    </p>
+                    <h3>The aftermath:</h3>
+                    <p>
+                        The Chief Justice of India announced that a special bench will be formed to hear a plea against
+                        the
+                        Gujarat government's decision to grant early release to the convicts in the Bilkis Bano case.
+                        The
+                        plea argues that the convicts should not be granted early release because they have not served
+                        their
+                        full sentences and because of the severity of the crime committed. The Supreme Court had
+                        previously
+                        upheld the life sentences of the convicts in 2017. The matter will now be heard by a special
+                        bench
+                        on 13/4/23.
+                    </p>
+
+                </div>
+            </div>
+            <div class="project one">
+                <div class="header">
+                    <div class="year">
+                        <p>/2023</p>
+                    </div>
+                    <div class="project-name">
+                        Consent
+                    </div>
+                    <div class="tech-used" style="display: flex;">
+
+                        <p>SA Cases</p>
+                        <p>News Roundups</p>
+                        <p>Domestic Abuse</p>
+
+                    </div>
+                </div>
+
+                <div class="image-link">
+                    <a href="https://www.instagram.com/p/CqYVedcKX53/">
+                        <img src="canvas.png" alt="" class="img" style="">
+
+                    </a>
+                </div>
+                <div class="descriptor">
+                    <h2>Monthly news round up for the month of March</h2>
+
+                    <h3>Safe to be a woman:</h3>
+                    <p>
+                        India's UN envoy, Ruchira Kamboj, said that it is the best time to be a woman in India today,
+                        highlighting the government's commitment to empowering women at all levels. During a high-level
+                        panel discussion at the United Nations on 19th March 2023, Kamboj emphasised the
+                        transformational capacity of technology in providing impetus to women's empowerment and
+                        sustainable development, citing various citizen-centric digital initiatives that have enabled
+                        access to finance, credit, technology and employment for women.
+                    </p>
+                    <p>
+                        In other news, a video surfaced on March 19, 2023, showing a girl being abducted by 2-3
+                        occupants of a car in Outer Delhi. The Delhi Police have cracked the case and arrested the
+                        accused, who turned out to be her relatives.
+                    </p>
+
+
+                    <h3>New developments in the Hathras case:</h3>
+                    <p>
+                        A special court in Hathras has acquitted three out of four accused persons and convicted one
+                        person for culpable homicide not amounting to murder in the rape and murder case of a
+                        19-year-old Dalit girl. The convicted, Sandeep Sisodia, was sentenced to life imprisonment,
+                        while the other accused were acquitted due to a lack of evidence. The victim’s family is likely
+                        to challenge the verdict in the Allahabad High Court, as the accused were not charged with rape
+                        or murder. The handling of the case by the Uttar Pradesh administration sparked widespread
+                        outrage, with Congress leaders visiting the victim’s village to show their support.
+                    </p>
+
+
+                    <h3>New developments in the Bilkis Bano case:</h3>
+                    <p>
+                        The Supreme Court of India has sought a response from the Centre and the Gujarat government on a
+                        plea against the early release of 11 convicts in the Bilkis Bano gang-rape case. Bilkis Bano was
+                        gang-raped and her three-year-old daughter was killed by a mob in Gujarat’s Dahod district
+                        during the 2002 riots. The 11 convicts were released on August 15 last year under the Gujarat
+                        government's remission policy, which has been challenged by Bilkis Bano. The court has directed
+                        the Gujarat government to be ready with relevant documents on April 18, and it will only go by
+                        the law and not be overwhelmed by emotions in the case. In a recent development, the released
+                        convicts were greeted with garlands, which was criticized by Justice (retired) UD Salvi, who was
+                        the trial court judge and had convicted all the accused.
+
+
+
+
+
+
+
+
+
+
+
+                    </p>
+
+
+                    <h3>
+                        Casteism at IITs:
+                    </h3>
+                    <p>
+                        Dalit student Darshan Solanki committed suicide at IIT Bombay, allegedly due to caste
+                        discrimination. An internal investigation committee found no evidence of direct caste-based
+                        discrimination, attributing Darshan's suicide to his deteriorating academic performance. Darshan
+                        faced hostility from classmates after revealing his Scheduled Caste community status, and many
+                        students from Dalit, tribal, and backward or Muslim communities have died by suicide in higher
+                        education institutions across India. Such deaths have led to demands for greater diversity and
+                        equity in India's higher education system. However, data shows that higher educational
+                        institutions in India remain hostile spaces for Dalits and backward and tribal people, with
+                        these communities facing discrimination even when applying for academic positions.
+                    </p>
+
+
+                    <h3>Men’s rights activists threaten hunger strike against marital rape PIL in SC</h3>
+
+                    <p>
+                        As an organization dedicated to gender equality, we cannot turn a blind eye to the issue of
+                        marital rape in India. Despite being recognized as a criminal offense by many countries,
+                        including India, marital rape continues to be a taboo topic that is often ignored or denied. It
+                        is a violation of a woman's bodily autonomy and a gross violation of her human rights.
+                    </p>
+                    <p>
+                        We believe that awareness and education are key to ending this practice. We have shared
+                        resources on our page, including a live discussion and a post, to help our followers understand
+                        the impact of marital rape and how we can work together to address it. We urge our community to
+                        stand with us in the fight against gender-based violence and to use their voices to support
+                        survivors of marital rape. Together, we can make a difference.
+                    </p>
+
+
+
+
+
+
+                </div>
+            </div>
+            <div class="project one">
+                <div class="header">
+                    <div class="year">
+                        <p>/2023</p>
+                    </div>
+                    <div class="project-name">
+                        Consent
+                    </div>
+                    <div class="tech-used" style="display: flex;">
+
+                        <p>Domestic Abuse</p>
+
+                    </div>
+                </div>
+
+                <div class="image-link">
+                    <a href="https://www.instagram.com/p/CqF8kgGLj0X/">
+                        <img src="https://snapxcdn.com/v2/?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJodHRwczovL3Njb250ZW50LmNkbmluc3RhZ3JhbS5jb20vdi90NTEuMjg4NS0xNS8zMzcxNzY1NzlfNTE4OTY5MzEwMzk3ODI3XzM0Njk5NTAwNTYzMzk5NjMxNTZfbi53ZWJwP3N0cD1kc3QtanBnX2UzNSZfbmNfaHQ9c2NvbnRlbnQuY2RuaW5zdGFncmFtLmNvbSZfbmNfY2F0PTEwMyZfbmNfb2hjPXpSTnlHVjRLTFJBQVhfMkFhQU8mZWRtPUFQczE3Q1VCQUFBQSZjY2I9Ny01Jm9oPTAwX0FmQmotZ1l3dldKd1FudDg2MUVxdUZMaW02WFZsbnZTcnJqeHJwZGZMYW9MZVEmb2U9NjQ3N0I1QzUmX25jX3NpZD1kZjA0NGYiLCJmaWxlbmFtZSI6IlNuYXBpbnN0YS5hcHBfMzM3MTc2NTc5XzUxODk2OTMxMDM5NzgyN18zNDY5OTUwMDU2MzM5OTYzMTU2X25fMTA4MC5qcGcifQ.curOmMaO9iucuP3j-SJJuFqkrR3vx-CxXRRJex7u73U&dl=1"
+                            alt="" class="img" style="">
+
+                    </a>
+                </div>
+                <div class="descriptor">
+                    <h2>Consent? many husbands only hear "yes".</h2>
+                    <p>Marital rape is a serious issue in India that remains largely unrecognized. Despite several
+                        attempts
+                        to criminalize marital rape, the country's legal system still doesn't recognize it as a crime.
+                        Many
+                        people in India believe that a husband has the right to engage in sex with his wife, regardless
+                        of
+                        her consent. This belief is reinforced by the deeply ingrained societal norms and gender roles
+                        that
+                        perpetuate the idea of male dominance and female submission.</p>
+                    <p>Last year, an NGO argued before the Delhi High Court that the lack of recognition of marital rape
+                        as
+                        a crime violates the fundamental rights of women. On May 11, 2021, the Delhi High Court gave a
+                        split
+                        verdict on the issue. Justice Rajiv Shakdher, one of the two judge who heard the matter,
+                        favoured
+                        the criminalisation of marital rape. Justice Hari Shankar held otherwise. Owing to the
+                        difference of
+                        views between the HC Bench, the matter reached the Supreme Court and is expected to be heard on
+                        May
+                        9.</p>
+                    <p>One of the key arguments that is anticipated is the issue of consent and whether or not a woman's
+                        consent is necessary for sexual activity within marriage. The Apex Court’s approach to this
+                        issue
+                        will be crucial in determining criminalisation of marital rape in India.
+                    </p>
+                    <p>We, at Spotlight believe that recognizing marital rape as a crime is long overdue in India. Women
+                        should have the right to say no to sexual activity within marriage, just as they do outside of
+                        marriage. This issue requires a multi-faceted approach that includes educating people on their
+                        sexual health and rights, as well as a shift in attitudes towards gender roles and sexuality.
+                        It's
+                        time for India to take action to create a society that values consent and empowers women to make
+                        their own choices about their bodies and sexuality.
+                    </p>
+
+
+
+
+
+
+                </div>
+            </div>
+            <div class="project one">
+                <div class="header">
+                    <div class="year">
+                        <p>/2023</p>
+                    </div>
+                    <div class="project-name">
+                        Brendan Fraser's Comeback
+                    </div>
+                    <div class="tech-used" style="display: flex;">
+
+                        <p>Public Figure</p>
+
+                    </div>
+                </div>
+
+                <div class="image-link">
+                    <a href="https://www.instagram.com/p/Cp5gBG5P-Ew/">
+                        <img src="https://snapxcdn.com/v2/?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJodHRwczovL3Njb250ZW50LmNkbmluc3RhZ3JhbS5jb20vdi90NTEuMjg4NS0xNS8zMzYxNjQ3MTdfMjIwMDQzOTM3MjM2NjUwXzQ0NTE5NjQwMDMxMTIxMDg0N19uLndlYnA_c3RwPWRzdC1qcGdfZTM1Jl9uY19odD1zY29udGVudC5jZG5pbnN0YWdyYW0uY29tJl9uY19jYXQ9MTEwJl9uY19vaGM9NmNORjd5ZmY2ODRBWDlUYlVDayZlZG09QVBzMTdDVUJBQUFBJmNjYj03LTUmb2g9MDBfQWZBNFNndFpJZGpYZloyM3dHSmZJSzVFdHBCaHNJRjBVYjFkX3VpVzhLcmFHZyZvZT02NDc3MTY3MiZfbmNfc2lkPWRmMDQ0ZiIsImZpbGVuYW1lIjoiU25hcGluc3RhLmFwcF8zMzYxNjQ3MTdfMjIwMDQzOTM3MjM2NjUwXzQ0NTE5NjQwMDMxMTIxMDg0N19uXzEwODAuanBnIn0.KKg3d0NY7HzEyBrqMTjh_Bi1SEN5DWrNC613DpzOV9U&dl=1"
+                            alt="" class="img" style="">
+
+                    </a>
+                </div>
+                <div class="descriptor">
+                    <h2>While everyone celeberates Brendan Fraser's "career comeback".... <br>Do you know why he left in
+                        the first place?</h2>
+                    <p>Brendan Fraser, a well-known actor, is one of the many survivors who have come forward to share
+                        their experiences with the public. It is crucial to support survivors of sexual assault and to
+                        provide them with the resources and care they need to heal and recover from the trauma they have
+                        endured.</p>
+                    <p>In 2003, Brendan Fraser was sexually assaulted by Philip Berk, a former president of the
+                        Hollywood Foreign Press Association. The incident occurred at a luncheon in the presence of
+                        other industry members. Fraser reported the assault to his family, friends, and some of his
+                        colleagues, but he chose not to go public with the story at the time. Fraser later revealed in
+                        an interview with GQ that the assault had a profound impact on him, and that he experienced
+                        depression and anxiety as a result. He also spoke about how the incident affected his career,
+                        saying that he believed his career suffered as a result of his decision not to speak out about
+                        the assault.</p>
+                    <p>Fraser's experience is unfortunately all too common in the entertainment industry, where power
+                        dynamics can often make it difficult for survivors to come forward. Many survivors fear that
+                        they will face repercussions or retaliation for speaking out, and some may feel ashamed or blame
+                        themselves for the assault.
+
+                        Despite the severity of the abuse Fraser experienced, his story was met with skepticism and
+                        criticism from some corners of the industry. Some suggested that he was exaggerating or seeking
+                        attention, while others implied that he should have just "sucked it up" and continued working.
+                    </p>
+                    <p>
+
+                        Male survivors of sexual abuse may experience a range of emotions, such as shame, guilt, anger,
+                        and confusion. It's equally important to not make light of men speaking out against SA and
+                        support them in seeking help from loved ones, friends, or mental health professionals to help
+                        them process their experiences and heal.
+                    </p>
+                    <p>
+                        Here are a few examples of quotes from individuals expressing support for Brendan Fraser and
+                        condemning the mistreatment he experienced in Hollywood:
+                    <ol class="br-li">
+                        <li>"Brendan Fraser's story is a powerful reminder that the entertainment industry needs to do
+                            better to protect and support its actors. It takes immense courage to speak out against
+                            mistreatment, and we should all listen to and believe survivors." - Reese Witherspoon,
+                            actress and producer.</li>
+                        <li>"Brendan Fraser is a talented actor who deserved better. No one should be subjected to
+                            harassment or abuse, and we need to work together to create a culture where everyone is safe
+                            and respected." - Alyssa Milano, actress and #MeToo activist.</li>
+                        <li>"Brendan Fraser's story is heartbreaking, but unfortunately all too common in Hollywood. We
+                            need to hold those in power accountable for their actions and work to create a more
+                            equitable and just industry for all actors." - Yara Shahidi, actress and activist.</li>
+                        <li>"Brendan Fraser's courage in speaking out about his experiences is inspiring. It takes
+                            incredible strength to confront past trauma, and we should all support survivors in their
+                            healing journeys." - Tarana Burke, founder of the #MeToo movement.</li>
+                        <li>"Brendan Fraser's story is a reminder that sexual harassment and abuse can happen to anyone,
+                            regardless of gender or status. We need to create a society where survivors are supported
+                            and perpetrators are held accountable." - Joe Biden, former Vice President of the United
+                            States, current President of the United States.</li>
+                    </ol>
+                    </p>
+                    <p>
+                        It is crucial to support survivors of sexual assault and to create a culture where speaking out
+                        is encouraged and survivors are believed and supported. By breaking the silence and sharing our
+                        stories, we can help to raise awareness about the prevalence of sexual assault and the need for
+                        change.
+                        Brendan Fraser's bravery in sharing his story can serve as an inspiration to others who have
+                        experienced sexual assault. It is important to continue to speak out about sexual assault and to
+                        work towards a world where survivors are supported, believed, and valued. We all have a role to
+                        play in creating a culture of respect, consent, and safety, and we must work together to make
+                        this vision a reality.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</body>
+
+</html>
