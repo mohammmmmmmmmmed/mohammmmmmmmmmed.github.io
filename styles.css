@@ -43,8 +43,11 @@
     color: white;
   }
   
-  @media (max-width:1600px){
+  @media (max-width:1000px){
     .name{
       margin-top: 35vh;
+      
     }
+    
+
   }
