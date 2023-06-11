@@ -425,6 +425,9 @@
   .projects a, .about a, .career a, .blog a{
     color: white;
   }
+  .career {
+    border-top: 2px solid white;
+  }
   .home{
     height: 30%;
     width: 100%;
@@ -432,10 +435,23 @@
     /* justify-self: center; */
   }
   .home a img{
+    display:none;
     /* padding: 0 10%; */
     width: 100%;
     align-items: center;
     height: 30vh;
+  }
+  .home a  p{
+    text-align: center;
+    color: white;
+    text-decoration: underline white;
+    /* border: 2px white solid; */
+    height: 30vh;
+    margin-top: 15%;
+    width: 100%;
+    align-items: center;
+    height: 30vh;
+
   }
   .contact{
     width: 100%;
